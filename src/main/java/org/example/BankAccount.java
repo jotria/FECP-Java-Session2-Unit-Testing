@@ -13,7 +13,7 @@ public class BankAccount {
     public BankAccount(String accountNumber, String bankAccountHolderName, float initialDeposit){
         this.accountNumber = accountNumber;
         this.bankAccountHolderName = bankAccountHolderName;
-        if(initialDeposit < 0){
+        if(initialDeposit <= 0){
             System.out.println("Invalid amount.");
         } else {
             this.availableBalance = initialDeposit;
